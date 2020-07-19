@@ -3,7 +3,7 @@ Repairs corrupt Windows OS files and fixes disk errors by executing the [SFC](ht
 
 These commands are frequently recommended to fix Windows system errors. I couldn't find any script online to easily execute all of these commands one by one, so I made it myself.
 
-You only need to start the "Run.bat" file, the "CHKDSK_scan.ps1" powershell file is run from the batch file. The file(s) will execute the following commands below, in the same order as listed:
+You only need to start the "Run.bat" file, the "CHKDSK_scan.ps1" powershell file is run from the batch file. The file(s) will execute the commands below, in the same order as listed:
 
 1. SFC /ScanNow
 2. DISM /Online /Cleanup-Image /CheckHealth
