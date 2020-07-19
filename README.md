@@ -5,8 +5,8 @@ These commands are frequently recommended to fix Windows system errors. I couldn
 
 You only need to start the "Run.bat" file, the "CHKDSK_scan.ps1" powershell file is run from the batch file. The file(s) will execute the following commands below, in the same order as listed:
 
-SFC /ScanNow
-DISM /Online /Cleanup-Image /CheckHealth
-DISM /Online /Cleanup-Image /ScanHealth
-DISM /Online /Cleanup-Image /RestoreHealth
-CHKDSK :drive /F /X - This command is optional by prompt. This command is run on all local drives, whereas HDD drives has the option to use the /R parameter to scan for bad sectors, for a more comprehensive scan.
+1. SFC /ScanNow
+2. DISM /Online /Cleanup-Image /CheckHealth
+3. DISM /Online /Cleanup-Image /ScanHealth
+4. DISM /Online /Cleanup-Image /RestoreHealth
+5. CHKDSK :drive /F /X - This command is optional by prompt. This command is run on all local drives, whereas HDD drives has the option to use the /R parameter to scan for bad sectors, for a more comprehensive scan.
